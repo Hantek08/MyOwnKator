@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kata2_IEquatable_IComparable_Factory
 {
-    class Member : IMember
+    abstract class Member : IMember
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
