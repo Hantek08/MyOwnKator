@@ -12,7 +12,7 @@ namespace Kata2a_Inheritance
         public string LastName { get; set; }
         public MemberLevel Level { get; set; }
         public DateTime Since { get; set; }
-        public virtual string[] Benefits { get; set; }
+        public virtual string[] Benefits { get => throw new NotImplementedException(); set=> throw new NotImplementedException(); }
 
         public override string ToString() => $" {GetType().Name} {FirstName} {LastName} is a {Level} member since {Since.Year}. And have benefits {Benefits}";
 
