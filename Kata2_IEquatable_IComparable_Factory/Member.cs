@@ -66,7 +66,7 @@ namespace Kata2_IEquatable_IComparable_Factory
             }
         }
 
-        #region Class Factory for creating an instance filled with Random data
+        /*#region Class Factory for creating an instance filled with Random data
         internal static class Factory
         {
             internal static IMember CreateWithRandomData()
@@ -76,7 +76,7 @@ namespace Kata2_IEquatable_IComparable_Factory
                 return member;  
             }
         }
-        #endregion
+        #endregion*/
 
         public Member() { }
     }

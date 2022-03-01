@@ -12,9 +12,9 @@ namespace Kata2a_Inheritance
         public string LastName { get; set; }
         public MemberLevel Level { get; set; }
         public DateTime Since { get; set; }
-        public virtual string[] Benefits { get => throw new NotImplementedException(); set=> throw new NotImplementedException(); }
+        public virtual string[] Benefits { get; set; }
 
-        public override string ToString() => $" {GetType().Name} {FirstName} {LastName} is a {Level} member since {Since.Year}. And have benefits {Benefits}";
+        public override string ToString() => $" {GetType().Name} {FirstName} {LastName} is a {Level} member since {Since.Year}. And have benefits {string.Join(", ", Benefits)}";
 
         #region Implement IComparable
         public int CompareTo(IMember other)
